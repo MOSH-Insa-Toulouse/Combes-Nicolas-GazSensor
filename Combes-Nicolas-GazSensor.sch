@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Combes-Nicolas-GazSensor-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -586,15 +585,12 @@ NoConn ~ 3950 4200
 NoConn ~ 8900 2800
 NoConn ~ 8900 2700
 NoConn ~ 8900 2600
-NoConn ~ 10550 3000
-NoConn ~ 10550 2900
 NoConn ~ 10550 2800
 NoConn ~ 10550 2700
 NoConn ~ 10550 2600
 NoConn ~ 10550 2500
 NoConn ~ 10550 2400
 NoConn ~ 10550 2300
-NoConn ~ 10550 2100
 NoConn ~ 10550 2000
 NoConn ~ 10550 1900
 NoConn ~ 10550 1800
@@ -682,4 +678,56 @@ NoConn ~ 9400 2900
 NoConn ~ 9400 3000
 NoConn ~ 10550 1200
 NoConn ~ 10550 1300
+$Comp
+L My_Library:RN2483_Breakout U1
+U 1 1 5BEB653A
+P 9400 4350
+F 0 "U1" H 9828 4340 50  0000 L CNN
+F 1 "RN2483_Breakout" H 9828 4249 50  0000 L CNN
+F 2 "MesEmpreintes:RN2483_Breakout" H 9300 4250 50  0001 C CNN
+F 3 "" H 9300 4250 50  0001 C CNN
+	1    9400 4350
+	1    0    0    -1  
+$EndComp
+Text GLabel 10550 2900 2    50   Output ~ 0
+Tx
+Text GLabel 10550 3000 2    50   Input ~ 0
+Rx
+Text GLabel 9150 4700 3    50   Input ~ 0
+Tx
+Text GLabel 9050 4700 3    50   Output ~ 0
+Rx
+NoConn ~ 9250 4700
+NoConn ~ 9350 4700
+NoConn ~ 9650 4700
+Text GLabel 10550 2100 2    50   Output ~ 0
+D8
+Text GLabel 9450 4700 3    50   Input ~ 0
+D8
+Wire Wire Line
+	9550 4700 9550 5000
+Wire Wire Line
+	9550 5000 9500 5000
+$Comp
+L power:GND #PWR06
+U 1 1 5BEC1C4B
+P 9750 4700
+F 0 "#PWR06" H 9750 4450 50  0001 C CNN
+F 1 "GND" H 9755 4527 50  0000 C CNN
+F 2 "" H 9750 4700 50  0001 C CNN
+F 3 "" H 9750 4700 50  0001 C CNN
+	1    9750 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0112
+U 1 1 5BEC1FCC
+P 9500 5000
+F 0 "#PWR0112" H 9500 4850 50  0001 C CNN
+F 1 "+3.3V" V 9500 5250 50  0000 C CNN
+F 2 "" H 9500 5000 50  0000 C CNN
+F 3 "" H 9500 5000 50  0000 C CNN
+	1    9500 5000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
