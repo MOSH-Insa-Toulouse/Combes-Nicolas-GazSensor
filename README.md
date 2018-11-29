@@ -33,13 +33,13 @@ Ici, on a simulé le capteur de gaz par une résistance variable, en effet le ca
 
 Une fois notre schéma électronique terminé, nous avons associé des empreintes à chaque composant. Pour trouver quelle empreinte associer à quel composant, nous avons regarder la taille des composant disponibles à l’INSA et choisi des empreintes adaptées. Pour le LTC1050, nous avons regardé dans la documentation technique, partie « Package Information » car nous n’avons pas se composant à l’INSA.
 
-![Screenshot](images/Tableau.pgn)
+![Screenshot](images/Tableau.png)
 
 ### IV Réalisation du schéma de routage
 
 Ensuite nous avons réalisé le schéma de routage pour les circuits imprimé.
 
-![Screenshot](images/Routage.pgn)
+![Screenshot](images/Routage.png)
 
 Ici on voit qu’une connexion n’est pas faite, cela permettra de réaliser le circuit en simple-face, elle sera réalisée avec un fil.
 
@@ -49,6 +49,7 @@ Ici on voit qu’une connexion n’est pas faite, cela permettra de réaliser le
 ### Auteurs : 
 
 Nicolas Damien
+
 Combes Jules
 
 
